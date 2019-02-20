@@ -10,9 +10,7 @@ To compile it:
 Then use it like:
 
 	f2c foo.txt foo.h
-  
-  and then open foo.h, modify string "foo.h" to "foo", fix this bug.
-	
+  	
 Now you can compile foo.h and access it like any regular text string array. You could serialize a zip archive in there, or things like that. Just keep in mind, that this is without a header! So to use it properly,you may want to create a header and declare these as "external". Therefore, the variable name appears at the top of the file after a // comment.
 
 An example header may look like this:
